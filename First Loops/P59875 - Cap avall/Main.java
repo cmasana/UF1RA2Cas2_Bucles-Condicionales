@@ -17,17 +17,33 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Asignamos los dos números introducidos por teclado a cada una de las variables
+        */
         int x = teclado.nextInt();
         int y = teclado.nextInt();
         
-        // Condicional que comprueba que úmero es mayor
+        /*
+        Añadimos un condicional para evaluar las posibles casuisticas 
+        */
         if (x >= y){ // Si x es mayor o igual a y
+            /*
+            Asignamos el valor del nº x a i
+            i mayor o igual que y para que el bucle se ejecute hasta que el valor de 
+            ambos números sea el mismo
+            Restamos de uno en 1 el valor de i para ir imprimiendo los números de mayor
+            a menor
+            */
             for (int i = x; i >= y; i--){
                 System.out.println(i); 
             }
         }
-        else { // Si y es mayor que x
+        
+        else { // Para el resto de los casos
+            /*
+            Como el de arriba con la única diferencia de que asignamos a i el valor de y
+            (Por si el 2º número fuera el mayor)
+            */
             for (int i = y; i >= x; i--){
                 System.out.println(i);
             }
