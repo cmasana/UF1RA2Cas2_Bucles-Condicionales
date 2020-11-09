@@ -13,14 +13,20 @@ public class Main {
         
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
         
-        // Declaramos variables y asignamos valor introducido por consola
+        /*
+        Declaramos variables y asignamos valor introducido por consola
+        */
         int a = teclado.nextInt();
         int b = teclado.nextInt();
         
-        // Variable que almacena el resultado
+        /*
+        Asignamos a variable la suma de los dos números
+        */
         int suma = a + b;
         
-        // Imprimimos resultado
+        /*
+        Imprimimos resultado
+        */
         System.out.println(suma);
     }
 }
