@@ -22,7 +22,9 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola
+        */
         int temperatura = teclado.nextInt();
         
         /*
@@ -32,14 +34,22 @@ public class Main {
         final int CALOR = 30; // Más de 30 hace calor
         final int FRIO = 10; // Menos de 10 hace frío
         
-        // Si la temperatura es igual o menor a 0 el agua se hiela
+        /*
+        Si la temperatura es igual o menor a 0 el agua se hiela
+        */
         final int AGUAHELADA = 0;
-        // Si la temperatura es igual o mayor a 100 el agua hierve
+        
+        /*
+        Si la temperatura es igual o mayor a 100 el agua hierve
+        */
         final int AGUAHIRVIENDO = 100;
 
         /*
          * Condicional que comprueba las temperaturas y muestra los resultados 
-         * correspondientes por consola
+         * correspondientes por consola. Hay que utilizar if anidados para poder evaluar
+         * si cuando hace CALOR el agua está HIRVIENDO o si cuando hace FRIO
+         * el agua está HELADA
+         * En el resto de los casos se imprime otro resultado
          */
         
         if (temperatura > CALOR){
