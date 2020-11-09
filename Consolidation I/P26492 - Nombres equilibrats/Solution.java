@@ -26,6 +26,9 @@ class Solution {
      * @return status Tipo boolean - TRUE si es equilibrado, FALSE si no lo es
      */
     public static boolean esEquilibrat(int n) {
+        /*
+        Asignamos a variable status el valor de FALSE
+        */
         boolean status = false;
 
         /*
