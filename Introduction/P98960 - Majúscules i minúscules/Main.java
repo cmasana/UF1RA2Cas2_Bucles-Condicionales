@@ -18,10 +18,17 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola
+        */
         char a = teclado.next().charAt(0);
 
-        // Condicional que comprueba si la letra es mayúscula o minúscula
+        /*
+        Condicional que comprueba si la letra es mayúscula o minúscula
+        Utilizamos el método isLowerCase de la clase Character para averiguar si es minúscula
+        Utilizamos método toUpperCase de clase Character para transformar a mayúscula y
+        toLowerCase para transformar en minúscula
+        */
         if (Character.isLowerCase(a)) {
             // Si es minúscula la cambia a mayúscula
             System.out.println(Character.toUpperCase(a));
