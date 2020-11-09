@@ -21,7 +21,7 @@ class Solution {
 
 
     /**
-     * Método que indica si el nº introducido es equilibrado o no
+     * Método que indica si el nº introducido por parámetro es equilibrado o no
      * @param n Tipo int - el número a evaluar
      * @return status Tipo boolean - TRUE si es equilibrado, FALSE si no lo es
      */
