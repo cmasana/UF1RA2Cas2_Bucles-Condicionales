@@ -17,27 +17,58 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        int num; // Almacena nº natural
-        int separa; // Almacena dígitos individuales
-        int suma = 0; // Almacena suma dígitos
+        /*
+        Almacena número
+         */
+        int num;
 
-        // Bucle que permanece abierto mientras existen parejas de numeros
+        /*
+        Almacena dígitos individuales
+         */
+        int separa;
+
+        /*
+        Almacena suma de dígitos
+         */
+        int suma = 0;
+
+        /*
+        Bucle que permanece en ejecución mientras existan números
+         */
         while (teclado.hasNext()) {
-            int original = teclado.nextInt(); // Almacenamos nº original para impresion por pantalla
+            /*
+            Asignamos el valor introducido por teclado a variable original
+             */
+            int original = teclado.nextInt();
+
+            /*
+            Asignamos el valor de original a variable num
+             */
             num = original;
 
-            // Bucle para realizar las operaciones con el nº introducido
+            /*
+            Bucle que se repite mientras no se cumpla la condición
+             */
             while (!(num / 10 == 0)) {
-                separa = num % 10; // Obtenemos el último dígito
+                /*
+                Para obtener el último dígito, realizamos la operación
+                 */
+                separa = num % 10;
 
-                // Obtenemos los primeros digitos
+                /*
+                Almacenamos en la variable num todos los dígitos menos el último
+                 */
                 num = num / 10;
 
-                // Vamos sumando los dígitos por separado
+                /*
+                Asignamos a la variable el total de sumar cada digito que hemos ido separando
+                 */
                 suma += separa;
             }
-            
-            // Cuando num es inferior a 10 lo sumamos directamente al resultado (último dígito)
+
+            /*
+            Cuando num es inferior a 10 lo sumamos directamente al resultado (último dígito)
+             */
             suma += num;
 
             System.out.println("La suma dels digits de " + original + " es " + suma + "."); // Muestra resultado
