@@ -21,10 +21,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola
+        */
         int year = teclado.nextInt();
         
-        // Condicional que comprueba cada caso
+        /*
+        Condicional que comprueba cada caso
+        */
         if (year % 4 == 0){ 
             if (year % 100 == 0){
                 if (year % 400 == 0){
