@@ -13,12 +13,16 @@ public class Main {
         
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
         
-        // Declaramos variables y asignamos valor introducido por consola
+        /*
+        Declaramos variables y asignamos valor introducido por consola
+        */
         String a = teclado.next();
         String b = teclado.next();
         String c = teclado.next();
         
-        // Imprimimos resultado
+        /*
+        Imprimimos resultado
+        */
         System.out.println(c + " " + b + " " + a);
     }
 }
