@@ -19,14 +19,21 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola. Como es un caracter 
+        hay que indicar la posición (índice) en este caso 0
+        */
         char letra = teclado.next().charAt(0);
 
-        // Condicional que comprueba si la letra es vocal o consonante
+        /*
+        Condicional que comprueba si la letra es vocal
+        */
         if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'A'
                 || letra == 'E' || letra == 'I'|| letra == 'O' || letra == 'U') {
             
-            // Condicional que comprueba si es minúscula o mayúscula
+            /*
+            Condicional que comprueba si es minúscula o mayúscula
+            */
             if (Character.isLowerCase(letra)) {
                 System.out.println("minuscula");
                 System.out.println("vocal");
@@ -35,7 +42,13 @@ public class Main {
                 System.out.println("vocal");
             }
         
-        } else { // Consonante
+            /*
+            Para el otro caso se trata de consonante
+            */
+        } else { 
+            /*
+            Condicional que comprueba si es minúscula o mayúscula
+            */
             if (Character.isUpperCase(letra)) {
                 System.out.println("majuscula");
                 System.out.println("consonant");
