@@ -14,11 +14,15 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variables y asignamos valor introducido por consola
+        /*
+        Declaramos variables y asignamos valor introducido por consola
+        */
         int a = teclado.nextInt();
         int b = teclado.nextInt();
         
-        // Condicional que comprueba cual de los dos valores es el máximo
+        /*
+        Condicional que comprueba cual de los dos valores es el máximo
+        */
         if (a > b) {
             System.out.println(a); // Si a es mayor se imprime a
         } else {
