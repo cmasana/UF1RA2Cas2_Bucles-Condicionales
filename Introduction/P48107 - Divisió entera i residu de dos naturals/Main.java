@@ -22,23 +22,31 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variables y asignamos valor introducido por consola
+        /*
+        Declaramos variables y asignamos valor introducido por consola
+        */
         int a = teclado.nextInt();
         int b = teclado.nextInt();
         
-        // Declaramos variables para almacenar los resultados
+        /*
+        Declaramos variables para almacenar los resultados
+        */
         int division;
         int residuo;
         
-        // Asignamos el valor de la operación a las variables de resultado
+        /*
+        Asignamos el valor de la operación a las variables de resultado
+        */
         division = a / b;
         residuo = a % b;
         
-        // Mostramos resultado por pantalla
+        /*
+        Mostramos resultado por pantalla
+        */
         System.out.print(division + " " + residuo);
         
         /*
-        NOTA: Si dividimos por 0 da un error de ejecución
+        NOTA: Si dividimos entre 0 da un error de ejecución, la entrada tiene que ser b > 0
         */
     }
 }
