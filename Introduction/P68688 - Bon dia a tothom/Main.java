@@ -5,7 +5,9 @@
 */
 public class Main {
 	public static void main(String [] args){
-		// Imprimimos por consola el string
+		/*
+		Imprimimos por consola el string
+		*/
 		System.out.println("Bon dia a tothom!");
 	}
 }
