@@ -21,11 +21,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola
+        */
         int euros = teclado.nextInt();
         int centimos = teclado.nextInt();
         
-        // Constantes que almacenan valor de billetes
+        /*
+        Constantes que almacenan valor de billetes
+        */
         final int B500 = 500;
         final int B200 = 200;
         final int B100 = 100;
@@ -36,7 +40,9 @@ public class Main {
         final int M2 = 2;
         final int M1 = 1;
         
-        // Constantes que almacenan valor centimos
+        /*
+        Constantes que almacenan valor centimos
+        */
         final int M50 = 50;
         final int M20 = 20;
         final int M10 = 10;
@@ -91,7 +97,9 @@ public class Main {
         
         int t01 = centimos / M01; // Total de monedas de 1
         
-        // Mostramos resultado por pantalla
+        /*
+        Mostramos resultado por pantalla
+        */
         System.out.println("Bitllets de 500 euros: " + t500);
         System.out.println("Bitllets de 200 euros: " + t200);
         System.out.println("Bitllets de 100 euros: " + t100);
