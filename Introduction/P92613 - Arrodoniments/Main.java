@@ -17,18 +17,28 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("en", "US")); // Añadimos punto como separador decimal
+        /*
+        Añadimos punto como separador decimal
+        */
+        Locale.setDefault(new Locale("en", "US")); 
+
         Scanner teclado = new Scanner(System.in); // Declaramos scanner
 
-        // Declaramos variable y asignamos valor introducido por consola
+        /*
+        Declaramos variable y asignamos valor introducido por consola
+        */
         double a = teclado.nextDouble();
         
-        // Declaramos variables para almacenar resultados de los redondeos
+        /*
+        Asignamos a cada variable los resultados de los distintos tipos de redondeos
+        */
         int entero = (int)Math.floor(a); // Redondeo hacia abajo con conversión explícita
         int decimal = (int)Math.ceil(a); // Redondeo hacia arriba con conversión explícita
         int redondeo = (int)Math.round(a); // Redondeo según criterio con conversión explícita
         
-        // Mostramos resultado por pantalla
+        /*
+        Mostramos resultado por pantalla
+        */
         System.out.println(entero + " " + decimal + " " + redondeo);
 
     }
