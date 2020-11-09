@@ -117,5 +117,11 @@ public class Main {
          */
         total += suma;
         System.out.println(total); // Imprimimos por pantalla
+        
+        /*
+        La lógica que envié al JUTGE era diferente pero funcionaba también, pero a la hora de cambiar los
+        comentarios descubrí que era mucho más fácil de explicar si lo hacía de otra manera y como obtengo el mismo
+        resultado bienvenido sea
+        */
     }
 }
